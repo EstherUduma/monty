@@ -60,7 +60,7 @@ void error_handler(int error_code, ...)
 		break;
 	}
 	va_end(args);
-	freeing_nodes();
+	free_stack_nodes();
 	exit(EXIT_FAILURE);
 }
 
@@ -99,7 +99,7 @@ void error_handler2(int error_code, ...)
 		break;
 	}
 	va_end(args);
-	freeing_nodes();
+	free_stack_nodes();
 	exit(EXIT_FAILURE);
 }
 
@@ -130,6 +130,6 @@ void error_handler3(int error_code, ...)
 		break;
 	}
 	va_end(args);
-	freeing_nodes();
+	free_stack_nodes();
 	exit(EXIT_FAILURE);
 }
