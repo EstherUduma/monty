@@ -50,5 +50,10 @@ void print_stack_elements(stack_t **stack, unsigned int line_number);
 stack_t *create_stack_node(int n);
 void free_stack_nodes(void);
 void add_node_to_queue(stack_t **new_node, unsigned int line_number);
-
+void error_handler(int error_code, ...);
+void error_handler2(int error_code, ...);
+void error_handler3(int error_code, ...);
+extern stack_t *head;
+void call_required_function(void (*func)(stack_t **, unsigned int), char *op,
+char
 #endif
