@@ -40,7 +40,7 @@ void free_stack_nodes(void)
 		temp = head;
 		head = head->next;
 		free(temp);
-	} while (head != NULL)
+	} while (head != NULL);
 }
 
 /**
@@ -49,7 +49,7 @@ void free_stack_nodes(void)
 * @line_number: the line number of the queue
 */
 
-void add_node_to_queue(stack_t **new_node, __attribute__((unusued))
+void add_node_to_queue(stack_t **new_node, __attribute__((unused))
 unsigned int line_number)
 {
 	stack_t *temp;
@@ -79,7 +79,7 @@ void add_node_to_stack(stack_t **new_node, __attribute__((unused))
 unsigned int line_number)
 {
 	if (*new_node == NULL || new_node == NULL)
-		error_handler(EXIT_ FAILURE);
+		error_handler(EXIT_FAILURE);
 	(*new_node)->next = head;
 	(*new_node)->prev = NULL;
 	if (head != NULL)
@@ -93,8 +93,8 @@ unsigned int line_number)
 * @line_number: integer representing the line number of the opcode
 */
 
-void print_stack_elements(stack_t **stack, __attribute__((unused))
-unsigned int line_number)
+void print_stack_elements(stack_t **stack, __attribute__
+((unused)) unsigned int line_number)
 {
 	stack_t *temp;
 

@@ -11,7 +11,7 @@ void pop_node(stack_t **stack, unsigned int line_number)
 	stack_t *temp;
 
 	if (!stack || !*stack)
-		errorhandler2(7, line_number);
+		error_handler2(7, line_number);
 	temp = *stack;
 	*stack = temp->next;
 	if (*stack != NULL)
@@ -28,7 +28,7 @@ void pop_node(stack_t **stack, unsigned int line_number)
 void print_top(stack_t **stack, unsigned int line_number)
 {
 	if (!stack || !*stack)
-		errorhandler2(6, line_number);
+		error_handler2(6, line_number);
 	printf("%d\n", (*stack)->n);
 }
 

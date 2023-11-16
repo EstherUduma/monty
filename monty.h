@@ -54,6 +54,28 @@ void error_handler(int error_code, ...);
 void error_handler2(int error_code, ...);
 void error_handler3(int error_code, ...);
 extern stack_t *head;
-void call_required_function(void (*func)(stack_t **, unsigned int), char *op,
-char
+void call_required_function(void
+(*func)(stack_t **, unsigned int), char *op, char *val, int ln, int format);
+int main(int argc, char *argv[]);
+void no_operation(stack_t **stack, unsigned int line_number);
+void swap_nodes(stack_t **stack, unsigned int line_number);
+void add_nodes(stack_t **stack, unsigned int line_number);
+void subtract_nodes(stack_t **stack, unsigned int line_number);
+void divide_nodes(stack_t **stack, unsigned int line_number);
+void pop_node(stack_t **stack, unsigned int line_number);
+void print_top(stack_t **stack, unsigned int line_number);
+void multiply(stack_t **stack, unsigned int line_number);
+void modulus(stack_t **stack, unsigned int line_number);
+void add_node_to_stack(stack_t **new_node, __attribute__
+((unused)) unsigned int line_number);
+void print_stack_elements(stack_t **stack, __attribute__
+((unused)) unsigned int line_number);
+void print_char(stack_t **stack, unsigned int line_number);
+void print_string(stack_t **stack, __attribute__
+((unused)) unsigned int line_number);
+void rotate_left(stack_t **stack, __attribute__
+((unused)) unsigned int line_number);
+void rotate_right(stack_t **stack, __attribute__
+((unused)) unsigned int line_number);
+
 #endif
