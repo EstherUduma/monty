@@ -49,7 +49,7 @@ void free_stack_nodes(void)
 * @line_number: the line number of the queue
 */
 
-void add_node_to_queue(stack_t **new_node, __attribte__((unusued))
+void add_node_to_queue(stack_t **new_node, __attribute__((unusued))
 unsigned int line_number)
 {
 	stack_t *temp;
